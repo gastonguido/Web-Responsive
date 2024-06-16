@@ -1,0 +1,412 @@
+/* Importación de GoogleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Variables CSS */
+:root {
+  --primary-color: rgb(99, 69, 138);
+  --secondary-color: gray;
+  --background-color: black;
+  --font-color: white;
+  --font-family: "Open Sans", sans-serif;
+  --header-height: 400px;
+  --header-mini-height: 300px;
+}
+
+/* Estilos generales */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.titleSection {
+  font-weight: 400;
+  font-size: 2em;
+  padding: 0 0 30px;
+  color: var(--background-color);
+  text-align: center;
+}
+
+.subtitleSection {
+  color: var(--secondary-color);
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 40px;
+}
+
+.header {
+  background-image: url("../img/header.jpg");
+  height: var(--header-height);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: var(--font-color);
+}
+
+/*--------------------------------------------NavBar--------------------------------------------*/
+
+nav {
+  background-color: var(--primary-color);
+  padding: 25px 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+}
+
+nav a {
+  color: var(--font-color);
+  padding: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--font-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Who We are section */
+
+#whoweare {
+  background-color: rgba(211, 211, 211, 0.192);
+  color: var(--secondary-color);
+  width: 100%;
+  padding: 30px 50px 0;
+}
+
+.titleSection {
+  color: var(--background-color);
+}
+
+.lore {
+  color: var(--background-color);
+}
+
+.subtitleSection {
+  text-align: center;
+}
+
+.pictexto {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.picpublicidad {
+  margin: 5px 5px 5px 10px;
+  float: right;
+}
+
+.columnas {
+  text-align: justify;
+  color: var(--secondary-color);
+  column-gap: 40px;
+  margin: 20px;
+  padding: 2px 40px;
+}
+
+.vl {
+  border-left: 1px solid rgba(119, 136, 153, 0.274);
+  padding-left: 20px;
+  position: relative;
+}
+
+/*--------------------------------------------Services Section--------------------------------------------*/
+
+#services {
+  padding: 40px 20px;
+}
+
+#services i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  height: 60px;
+  width: 60px;
+  margin-right: 8px;
+  font-size: 1.2em;
+  border: solid 4px lightgray;
+  padding: 16px;
+  border-radius: 70%;
+}
+
+.cardServices {
+  text-align: justify;
+  margin-bottom: 50px;
+  padding-right: 25px;
+}
+
+.cardServices p {
+  font-size: small;
+}
+
+#services i:hover {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  transition: 0.5s;
+}
+
+.cardServices p {
+  line-height: 2em;
+  color: var(--secondary-color);
+}
+
+.cardServices h3 {
+  margin-bottom: 25px;
+}
+
+/*--------------------------------------------Portfolio Section--------------------------------------------*/
+
+.portfolio {
+  text-align: center;
+  background-size: cover;
+  background-color: rgba(144, 144, 144, 0.118);
+  padding: 40px 20px;
+}
+
+.imgrote,
+.rotacion360 {
+  width: 250px;
+  height: 150px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.rotacion360 {
+  transform: rotate(-360deg);
+  transition: 1s;
+}
+
+.rotacion360:hover {
+  transform: rotate(360deg);
+  transition: 1s ease-in-out;
+  border-radius: 50%;
+}
+
+.imgrote {
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.imgrote:hover {
+  transform: rotate(-10deg);
+  transition: 1s ease-in-out;
+}
+
+/*--------------------------------------------Location--------------------------------------------*/
+
+#location {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+#titleMaps h2,
+#titleMaps h3 {
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#titleMaps h3 {
+  color: var(--secondary-color);
+}
+
+#maps > article > iframe {
+  column-count: 2;
+  padding: 1px;
+  margin: 1px;
+  background-color: var(--background-color);
+}
+
+#mapa {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#mapaGoogle {
+  margin-bottom: 10px;
+}
+
+#mapaGoogle :hover {
+  border-radius: 0;
+  transform: scale(1.2);
+}
+
+#location address {
+  text-align: initial;
+  width: 100%;
+  padding-left: 50px;
+}
+
+/* Contact section */
+
+#contact {
+  background-color: rgb(181, 162, 207);
+  background-image: url("/img/map-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--font-color);
+  padding: 40px 20px;
+}
+
+#contact .titleSection {
+  color: var(--font-color);
+}
+
+#contact form {
+  margin: 0 auto;
+}
+
+#emailWarning{
+  font-size: medium;
+  font-weight: bolder;
+  color: red;
+  text-decoration: underline;
+}
+#phoneWarning{
+  font-size: medium;
+  font-weight: bolder;
+  color: red;
+  text-decoration: underline;
+}
+
+/* Footer section */
+
+footer {
+  background-color: rgba(122, 78, 148, 0.7);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  max-width: 1200px;
+  position: fixed;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(122, 78, 148);
+  background-color: white;
+}
+
+footer img {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+footer .backToTop {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 10%;
+  transition: 0.5s;
+  font-size: xx-large;
+}
+
+.backToTop:hover {
+  color: rgb(122, 78, 148);
+  background-color: white;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  #navegacion {
+    justify-content: end;
+    text-align: center;
+  }
+
+  .vl {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+      url("../img/header-mini.png");
+    text-align: center;
+    color: var(--background-color);
+    height: var(--header-mini-height);
+  }
+
+  #location,
+  #titleMaps h2,
+  #titleMaps h3,
+  #location address,
+  #mapaGoogle {
+    text-align: center;
+    width: 100%;
+  }
+
+  #titleMaps h3 {
+    color: var(--secondary-color);
+  }
+
+  #address strong {
+    padding: 50px;
+  }
+
+  #maps > article > iframe {
+    background-color: var(--background-color);
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .backToTop {
+    right: 3%;
+  }
+
+  #whoweare {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  #location address {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 810px) {
+  #contact form {
+    width: 50%;
+  }
+}
