@@ -1,0 +1,81 @@
+<section id="contact">
+  <h2 class="titleSection text-center">Email Us</h2>
+  <form method="POST" action="form.php" class="text-left" id="form">
+    <fieldset class="row mb-3 text-left">
+      <label for="name" class="col-lg-2 col-md-12 col-form-label">Name*:</label>
+      <div class="col-lg-10 col-md-12">
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          placeholder="Your name"
+        />
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3 text-left">
+      <label for="email" class="col-lg-2 col-md-12 col-form-label"
+        >Email*:</label
+      >
+      <div class="col-lg-10 col-md-12">
+        <input
+        required
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          placeholder="mail@domain.ext"
+        />
+        <span id="emailWarning" style="display: none;">Domain cannot be gmail</span>
+
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3 text-left">
+      <label for="tel" class="col-lg-2 col-md-12 col-form-label">Phone:</label>
+      <div class="col-lg-10 col-md-12">
+        <input
+        required
+          type="tel"
+          class="form-control"
+          id="inputPhone"
+          placeholder="ej. 685830365 ext.34"
+        />
+        <span id="phoneWarning" style="display: none;">Phone number must start with 6, 7 or 9 and be 9 digits long. You can add the country extension after the phone number leaving an space.</span>      </div>
+    </fieldset>
+    <fieldset class="row mb-3 text-left">
+      <label for="subject" class="col-lg-2 col-md-12 col-form-label"
+        >Subject*:</label
+      >
+      <div class="col-lg-10 col-md-12">
+        <input
+          type="text"
+          class="form-control"
+          id="inputSubject"
+          placeholder="Subject"
+        />
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3 text-left">
+      <label for="inputMessage" class="col-lg-2 col-md-12 col-form-label"
+        >Message*:</label
+      >
+      <div class="col-lg-10 col-md-12">
+        <textarea
+          class="form-control"
+          id="inputMessage"
+          style="height: 100px"
+          placeholder="Reason"
+        ></textarea>
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3 text-left">
+      <label class="col-lg-2 col-md-12 col-form-label"></label>
+      <div class="col-lg-10 col-md-12">
+        <input
+          id="buttonSend"
+          type="submit"
+          value="Send"
+          class="btn btn-light"
+        />
+      </div>
+    </fieldset>
+  </form>
+</section>
